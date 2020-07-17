@@ -25,6 +25,10 @@
 
 
     <style>
+
+      /* stuff from bootstrap */
+      /* ******************** */
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -40,25 +44,44 @@
         }
       }
 
-      body {
-        /* padding-top: 5rem; */
-        padding-top: 65px;
-      }
       .starter-template {
         padding: 3rem 1.5rem;
         /* text-align: center;  */
+      }
+
+      /* CSS for generic tags */
+      /* ******************** */
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        /* padding-top: 5rem; */
+        padding-top: 65px;
+        -webkit-hyphens: auto;
+	      -moz-hyphens: auto;
+	      -ms-hyphens: auto;
+	      hyphens: auto;
       }
 
       p{
         font-size: 21px;
       }
 
-      html {
-        scroll-behavior: smooth;
+      li{
+        font-size: 20px;
       }
 
+      td {
+        padding: 5px;
+      }
+
+      /* CSS for specific tags */
+      /* ********************* */
+
       .infobox {
-        border: 3px solid red;
+        border: 3px solid rgb(70, 66, 66);
         border-radius: 5px;
         margin: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -78,6 +101,26 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
 
+      .methodbox {
+        border: 3px solid green;
+        border-radius: 5px;
+        margin: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .faststudentsbox {
+        border: 3px solid red;
+        border-radius: 5px;
+        margin: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .timebox {
+        border: 3px solid black;
+        border-radius: 5px;
+        margin: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
 
     </style>
     <!-- Custom styles for this template -->
@@ -99,13 +142,13 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#section0">Einführung<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#section0">1. Einführung<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#section1">Die Herstellung von Ethanol<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#section1">2. Die Herstellung von Ethanol<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section2">2.Mission</a>
+            <a class="nav-link" href="#section2">3. Mission</a>
           </li>
           <!--<li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -131,8 +174,8 @@
         <h1 style="text-align: center;">Alkanole - Ein Skript zum selbstständigen Lernen</h1>
           
           <a id="section0"></a>
-          <h2 style="padding-top: 65px;">Einführung</h2>
-            <p>
+          <h2 style="padding-top: 65px;">1. Einführung</h2>
+            <p class="lead">
               Mit Hilfe dieses Skriptes sollst du dir das Thema Alkanole selbstständig erarbeiten. Selbstständig bedeutet wirklich SELBST und STÄNDIG. Der Unterricht im klassischen Sinne hat aufgehört. Du kannst dein eigenes Tempo bestimmen und dir deine eigenen Partner oder Partnerin suchen. Sollte die Lehrkraft nicht da sein, hast du nun immer das Material um selbstständig zu arbeiten. <br>
               Die Lehrkraft soll dir dabei als Berater zur Seite stehen. Wenn du Fragen hast oder auf Probleme stößt, die du weder allein noch im Team lösen konntest, dann fragst du nach!
               Ansonsten ist dieses Skript so konzipiert, dass du dich selbst kontrollieren kannst. Wenn du einen Aufgabenbereich abgeschlossen hast, gehst du zur Lehrkraft und lässt dir die Lösungen geben. Analysiere deine möglichen Fehler. Bedenke: "Aus Fehlern wird man klug!"<br>
@@ -141,7 +184,7 @@
               Vielleicht fragst du dich jetzt, warum die Lehrer so faul sein dürfen und du jetzt alles allein machen musst. Der Grund ist recht einfach: die Lehrer haben alles bereits so vorbereitet, dass du dich intensiv mit einem Thema beschäftigen kannst. Dadurch bleibt es besser in deinem Wissensspeicher – auch als Gehirn bekannt – hängen. Du lernst effektiver die Inhalte, verbesserst dein eigenes Zeitmanagement und analysierst deine eigenen Fähig- und Fertigkeiten.<br>
               Als zusätzliche Leistung musst du ein Lehrvideo erstellen. Dazu kannst du dir ein Thema aus dem Skript aussuchen. Bildet eine Gruppe aus maximal vier Leuten. Das Video sollte nicht länger als vier Minuten sein. Es wird in deine Note einfließen.  <br>
             </p> 
-            <h3>Symbole im Skript</h3>
+            <h3>1.1 Symbole im Skript</h3>
             <div class="infobox">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png" height="150px" style="float: left; padding: 6px;">
               <h3>Infotext</h3>
@@ -167,17 +210,231 @@
               <p style="padding: 5px;">
                 Manche Online-Quellen haben nicht ins Skript gepasst. Daher kannst du mit deinem Handy auf diesen QR-Codes klicken und so die Weblinks (URLs) öffnen. 
               </p>
+              <br>
             </div>
           <br>
+            <div class="methodbox">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png" height="150px" style="float: left; padding: 6px;">
+              <h3>Durchführung</h3>
+              <p style="padding: 5px;">
+                Dieses Symbol weißt immer auf eine Durchführung für ein Experiment hin.  
+              </p>
+              <br>
+            </div>
+          <br>
+            <div class="faststudentsbox">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png" height="150px" style="float: left; padding: 6px;">
+              <h3>Für schnelle Schüler_innen</h3>
+              <p style="padding: 5px;">
+                Es soll keine Langeweile aufkommen. Wenn du mit Aufträgen bereits fertig bist, während deine Gruppe noch arbeitet, kannst du dich hier noch weiter in das Thema vertiefen.
+              </p>
+            </div>
+          <br>
+            <div class="timebox">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png" height="150px" style="float: left; padding: 6px;">
+              <h3>Zeit</h3>
+              <p style="padding: 5px;">
+                Das Zeitsymbol soll dir zeigen, wie lange du für das jeweilige Kapitel brauchen solltest. Diese Zeitangabe dient aber nur als Orientierung. Am Ende musst du nur die Planung deiner Lehrkraft und deine eigene Zeitplanung beachten.   
+              </p>
+            </div>
+          <br>
+          <h3>1.2 Bewertung</h3>
+            <p class="lead">
+              Das Thema Alkanole wird uns bis zu den Weihnachtsferien beschäftigen. In dieser Zeit musst du folgende Leistungen erbringen:
+            </p>
+            <ul>
+              <li><b>ausführliches Protokoll</b> zu den Eigenschaften der linearen Alkoholen,</li>
+              <li>zwei <b>Tests</b>,</li>
+              <li><b>Tutorial-Video</b> (4-5min) zu einem Thema aus dem Skript, nach Rücksprache mit der Lehrkraft,</li>
+              <li><b>Portfolio</b>,</li>
+              <li>(mündliche) <b>Mitarbeit</b>; diese ergibt sich daraus, wie viele Aufgaben du mit der Lehrerkraft besprochen und kontrolliert hast. Nach der erfolgreichen Rücksprache gilt ein Kapitel als beendet. Du musst alle Kapitel schaffen, wenn du volle Punkte erhalten willst.</li>
+            </ul>
+          <h4>1.2.1 Das Portfolio</h4>
+            <p class="lead">
+              Das Portfolio ist ein Teil der Arbeit und Bewertung. Zum einen dient es der Sicherung und Sammlung aller Arbeitsergebnisse. Du kannst und sollst in diesem Portfolio alles sammeln, was du an Materialien und Produkten selbst erarbeitetet hast. <br>
+    					Die zweite Funktion des Portfolios ist die Darstellung deiner eigenen Entwicklung. Mit Hilfe des Portfolios belegst du deinen Lernfortschritt und reflektierst deine Arbeitsergebnisse und deine Arbeitsweise. Diese Reflexion sollte sich  auf alle Arbeitsprozesse, wie z.B. Recherchen oder Gruppenarbeiten, beziehen. Die Selbstreflexion sollte unabhängig von den Arbeitsaufträgen der Lehrkraft erfolgen.
+            </p>
+          <h4>1.2.2 Hilfreiche Fragen für die Reflexion</h4>
+            <ul>
+              <li>Habe ich die Zeit effektiv genutzt?</li>
+              <li>Habe ich alle Aufträge gelöst?</li>
+              <li>Habe ich alles verstanden?</li>
+              <li>Habe ich gut allein gearbeitet?</li>
+              <li>Habe ich gut in der Gruppe gearbeitet?</li>
+              <li>Was kann ich in der nächsten Stunde besser machen?</li>
+            </ul>
+          <h4>1.2.3 Bewertungsraster für das Portfolio</h4>
+          <p class="lead">
+            Die Bewertung des Portfolios erfolgt zum Ende des Halbjahres und mit Hilfe dieses Bewertungsrasters.
+          </p>
+          <table class="table">
+            <thead  class="thead-dark">
+              <th scope="col">
+                <b>Kriterium</b>
+              </th>
+              <th  scope="col">
+                <b>1BE</b>
+              </th>
+              <th scope="col">
+                <b>2BE</b>
+              </th>
+              <th scope="col">
+                <b>3BE</b>
+              </th>
+              <th scope="col">
+                <b>4BE</b>
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="5" style="text-align: center;">
+                  <b>Formale Kriterien (Gewichtung 1)</b>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Deckblatt
+                </th>
+                <td>
+                  In Ansätzen vorhanden
+                </td>
+                <td>
+                  Vorhanden
+                </td>
+                <td>
+                  Vorhanden und sorgfältig gestaltet
+                </td>
+                <td>
+                  Vorhanden und sorgfältig bzw. kreativ gestaltet
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Inhaltsverzeichnis
+                </th>
+                <td>
+                  In Ansätzen vorhanden
+                </td>
+                <td>
+                  Vorhanden
+                </td>
+                <td>
+                  Vorhanden, sauber und sorgfältig gestaltet
+                </td>
+                <td>
+                  Vorhanden, sauber und sorgfältig bzw. kreativ gestaltet
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Äußere Form
+                </th>
+                <td>
+                  Ausführung ist in Teilen nicht akzeptabel
+                </td>
+                <td>
+                  Ausführung ist akzeptabel
+                </td>
+                <td>
+                  Ausführung ist  sauber und ordentlich
+                </td>
+                <td>
+                  Ausführung ist sehr sauber, leserlich und ordentlich
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Sprache
+                </th>
+                <td>
+                  Sprachliche Defizite
+                </td>
+                <td>
+                  Zum Teil sprachliche Fehler
+                </td>
+                <td>
+                  Kaum sprachliche Fehler
+                </td>
+                <td>
+                  Angemessene fehlerfreie Sprache
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: center;">
+                  <b>Inhaltliche Kriterien (Gewichtung 2)</b>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Dokumentation
+                </th>
+                <td>
+                  Weniger als zur Hälfte erfüllt
+                </td>
+                <td>
+                  Mehr als zur Hälfte erfüllt
+                </td>
+                <td>
+                  Weitgehend erfüllt
+                </td>
+                <td>
+                  Vollständig erfüllt
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: center;">
+                  <b>Reflexion der Arbeit und des Erkenntnisgewinns (Gewichtung 3)</b>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Reflexion
+                </td>
+                <td>
+                  Kaum Reflexionsfähigkeit erkennbar
+                </td>
+                <td>
+                  Reflexionsfähigkeit zum Teil erkennbar
+                </td>
+                <td>
+                  Gute Reflexionsfähigkeit erkennbar
+                </td>
+                <td>
+                  Sehr gute Reflexionsfähigkeit erkennbar
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="lead"> 
+            Die <b>Dokumentation</b> der Arbeit enthält z.B. die Lösungen zu den Arbeitsaufträgen, weitere Mitschriften, Quellen, Recherchen, gezeichnete oder ausgedruckte Bilder, Mind-Maps etc. <br>
+						Die durchgängige <b>Reflexion</b> beinhaltet die Arbeit in der Klasse, in der Gruppe, Einzelarbeit, die Reflexion des Erkenntnisstands etc.
+          </p>
 
           <a id="section1"></a>
-          <h2 style="padding-top: 65px;">Die Herstellung von Ethanol</h2>
-            <h3>Die alkoholische Gärung</h3>
+          <h2 style="padding-top: 65px;">2. Die Herstellung von Ethanol</h2>
             <p class="lead">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+              Herzlichen Glückwunsch! Du hast es dir in der Zombie-Apokalypse gemütlich gemacht! Du hast dein Auto zum Laufen bekommen und verstanden, wozu man organische Chemie und Erdöl braucht. Nun ist aber ein tötliches Virus aufgetaucht, dass sich von Mensch zu Mensch verbreitet. Zeit, das Desinfektionsmittel rauszuholen oder herzustellen.   
             </p>
+            <p>Am Ende dieses Kapitels sollst du ... :</p>
+            <ul>
+              <li>Alkohol</li>
+            </ul>
+            <p>Vorgehensweise:</p>
+            <ul>
+              <li>In einer Gruppe arbeiten</li>
+            </ul>
+            <div class="timebox">
+              <img src="https://jonaspews.github.io/script_symbol_time.png" height="100px" style="float: left; padding: 6px;">
+              <h3>Zeit</h3>
+              <p style="padding: 5px;">
+                90min
+              </p>
+            </div>
+          <hr>  
+            <h3>2.1 Die alkoholische Gärung</h3>
+            
           <br>
-
+          
 
           <a id="section2"></a> <!-- anchor in this possition to have 2nd chapter start below navbar-->
           <h2 style="padding-top: 65px;">2. Mission</h2>
