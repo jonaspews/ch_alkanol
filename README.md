@@ -2,11 +2,28 @@
 
 Dieses Skript kann in der Mittelstufe genutzt werden, damit sich SuS das Thema Alkanole selbstständig (oder im Regelunterricht) aneignen können. Die Idee ist, dass sowohl die TEX/PDF-Datei oder die HTML-Datei an die SuS verteilt werden können. Die SuS entscheiden dann selber, welche Datei sie nutzen wollen. Auf Smartphones sind die Inhalte in HTML (vielleicht) besser darstellbar und nutzbar. // This script can be used at the intermediate level to enable students to learn about alkanols independently (or in regular lessons). The idea is that both the TEX/PDF file or the HTML file can be distributed to the students. They then decide which file to use. On smartphones, the content in HTML is (perhaps) better displayed and usable.
 
-## Getting Started
+## Überblick // Overview:
 
-Entweder lädt man sich die tex-Datei runter und compiliert sie selbst mit LuaLatex oder man lädt sich die HTML-Datei runter und bearbeitet und verteilt sie an die SuS. 
+* **Sprache // Language:** Deutsch // German
 
-### Prerequisites
+* **Dauer // Length:** ca. 8 Wochen // about 8 weeks
+
+### Lehrplan // Curriculum: 
+
+* **Land // Country:** Deutschland // Germany
+
+* **Bundesland // state:** Berlin-Brandenburg
+
+* **Jahrgang // year level:** 10
+
+## Loslegen // Getting Started
+
+Folgende Möglichkeiten gibt es: ... // There are the following options: ...
+* ... die TEX-Datei runterladen und mit LuaLatex selbst compilieren 
+* ... PDF-Datei nutzen // use PDF-file
+* ... HTML-Datei runterladen, bearbeiten und verteilen 
+
+## Voraussetzungen // Prerequisites
 
 LuaLatex for tex-file
 
