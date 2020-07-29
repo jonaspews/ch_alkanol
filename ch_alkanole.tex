@@ -47,7 +47,7 @@
 %scrpage2
 \pagestyle{scrheadings}
 
-% this luacode has no function, except to make sure document is compiled using LuaLaTex
+% this luacode has no function, except to make sure the document is compiled using LuaLaTex
 \begin{luacode*}
 	--[[
 		print("this is just a comment")
@@ -71,6 +71,11 @@
 \title{Alkanole - Ein Skript zum selbstständigen Lernen}
 \date{\today}
 
+% Some Info about this document
+% *****************************
+%
+% TODO: write Text how this doc can be used in school. also about RLP Brandenburg/Berlin
+
 \begin{document}
 
 	\maketitle
@@ -86,6 +91,8 @@
 	\tableofcontents
 
 \pagebreak
+		
+		% TODO: think about using part "Fundamentum" and "Additum"
 		
 		\section{Einführung}
 	
@@ -882,7 +889,7 @@
 				\noindent\rule{18cm}{0.1pt}
 			\end{center}
 						
-						
+\newpage						
 			\subsection{Nomenklatur und Isomere}
 			
 				\noindent \textbf{Auftrag: Erkläre, wie man die verschiedenen Alkohole benennt.}
@@ -893,27 +900,6 @@
 				\end{enumerate}
 				
 				
-				% \vspace{0.3cm}
-				\begin{center}
-					\begin{tabular}{|c|c|c|c|}
-						\hline
-						\textbf{Name} & Propan-1-ol & ... & Propan-3-ol \\
-						\hline
-						\textbf{Struktur} & ... & \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]OH)-C(-[2]H)(-[6]H)-H} & ... \\
-						\hline 
-					\end{tabular}
-				\end{center}
-
-				\begin{center}
-					\begin{tabular}{|c|c|c|c|}
-						\hline
-						\textbf{Name} & Propan-1-ol (einwertig) & Ethan-1,2-diol (2-wertig) & Propan-1,2,3-triol (3-wertig) \\
-						\hline
-						\textbf{Struktur} & ... & ... & ... \\
-						\hline 
-					\end{tabular}
-				\end{center}
-
 				
 				\begin{tcolorbox}[enhanced,
 					colback=white,
@@ -940,6 +926,28 @@
 					Wenn es mehrere OH-Gruppen gibt, führen sie diese ebenfalls im Namen auf. Alkohole mit einer OH-Gruppe werden als einwertig, mit zwei OH-Gruppen als zweiwertig und mit drei OH-Gruppen als dreiwertig bezeichnet.					
 				\end{tcolorbox}
 
+				% \vspace{0.3cm}
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|}
+						\hline
+						\textbf{Name} & Propan-1-ol & ... & Propan-3-ol \\
+						\hline
+						\textbf{Struktur} & ... & \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]OH)-C(-[2]H)(-[6]H)-H} & ... \\
+						\hline 
+					\end{tabular}
+				\end{center}
+
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|}
+						\hline
+						\textbf{Name} & Propan-1-ol (einwertig) & Ethan-1,2-diol (2-wertig) & Propan-1,2,3-triol (3-wertig) \\
+						\hline
+						\textbf{Struktur} & ... & ... & ... \\
+						\hline 
+					\end{tabular}
+				\end{center}
+
+
 				\vspace{0.3cm}
 				\textbf{Auftrag: Übung macht den Meister/die Meisterin!}
 				\begin{enumerate}
@@ -952,9 +960,321 @@
 					\item \textbf{Benenne} die folgenden Moleküle und \textbf{erkläre}, wie du zu dem Namen gekommen bist.
 						\begin{itemize}
 							\item \chemfig{H-[,1.5]C(-[2]H)(-[6]H)-[,1.5]C(-[2]H)(-[6]C(-[4,0.75]H)(-[6,0.75]H)(-[8,0.75]H))-[,1.5]C(-[2]H)(-[6]OH)-[,1.5]C(-[2]H)(-[6]H)-[,1.5]C(-[2]H)(-[6]H)-H}
-							\item \chemfig{H-C-C-C-C-C-C-OH}
+							\item \chemfig{CH_3-C(-[2]CH_3)(-[6]CH_3)-CH_2-CH(-[6]C_2H_5)-CH_2-CH_2-OH}
 						\end{itemize}
 				\end{enumerate}
+				
+				\vspace{0.3cm}
+				\begin{tcolorbox}[enhanced,
+					colback=white,
+					colframe=red,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Für schnelle Schüler\_innen,  % search keyword::schnelle_Schüler
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.40mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=red,height=0.75cm},
+					colbacktitle=red,
+					drop lifted shadow]
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.8\textwidth]{symbols/symbol_tex_faststudents}
+					\end{wrapfigure}
+					
+					Bildet Gruppen von max. 4 Lernenden. Jede(r) Lernende(r) zeichnet ein Alkoholmolekül mit max. 10 C-Atomen und benennt es. Zeigt danach die LEWIS-Formel den anderen Gruppenmitgliedern, damit sie das Molekül benennen können. Vergleicht eure Ergebnisse!
+					\vspace{0.3cm}  % to fill empty space in tcolorbox
+				\end{tcolorbox}
 
+\newpage
+		\section{Mehrwertige Alkohole}
+
+			\textit{Die Gruppe der Alkohole ist sehr groß. Wie unterscheiden sich nun die verschiedenen Arten voneinander? Finde es mit den Experimenten heraus, die du schon oft durchgeführt hast.} \newline
+			
+			\begin{minipage}{0.7\textwidth}
+				\noindent \textbf{Am Ende dieses Kapitels solltest du ... :}
+				\begin{enumerate}
+				    \item ... begründete Voraussagen zur Struktur von Teilchen bei Kenntnis der Eigenschaften der Alkanole zu machen.
+				    \item ... Glycerin und Glykol als Beispiele für Polyalkohole zu nennen und deren Strukturformen aufzuzeichnen.
+				\end{enumerate}	
+				
+				\noindent \textbf{Vorgehensweise:}
+				\begin{enumerate}
+					\item Arbeite in Gruppen von 4-5 SuS.
+					\item Bearbeite die Arbeitsaufträge.
+				\end{enumerate}	
+			\end{minipage}
+			\hspace{0.1\textwidth}
+			\begin{minipage}{0.2\textwidth}
+				\begin{tcolorbox}
+					[enhanced,
+					width=0.9\textwidth,
+					colback=white,
+					colframe=black,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Zeit,  % search keyword::Zeit
+					attach boxed title to top center={xshift=-0.0mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=black,height=0.75cm},
+					colbacktitle=black,
+					drop lifted shadow]
+					\centering
+					\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_time}
+					
+					\begin{center}
+						\textbf{90min}
+					\end{center}
+				\end{tcolorbox}
+			\end{minipage}
+			
+			\vspace{0.3cm}
+			\begin{tcolorbox}[enhanced,
+				colback=white,
+				colframe=orange!60!red,
+				fonttitle=\sffamily\bfseries\large, 
+				title=Wiederholung,  % search keyword::Wiederholung
+				attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+				boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=orange!60!red,height=0.75cm},
+				colbacktitle=orange!60!red,
+				% sharp corners,
+				drop lifted shadow]	
+				\begin{wrapfigure}{L}{0.15\textwidth}  
+					\centering
+					\vspace{-14pt}  % to align image with first line of text
+					\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_review}
+				\end{wrapfigure}
+				
+				Schau dir noch einmal die Protokoll zu den anderen Experimenten an, mit denen du Stoffeigenschaften untersucht hast. Wie wurden sie durchgeführt und was konntest du daraus ableiten? 
+				\vspace{0.3cm}
+			\end{tcolorbox}
+			
+			\begin{center}
+				\noindent\rule{18cm}{0.1pt}
+			\end{center}
+						
+\newpage
+			\subsection{Die experimentelle Untersuchung von mehrwertigen Alkoholen}
+			
+				\noindent \textbf{Auftrag: Vergleiche experimentell die Eigenschaften von einwertigen und mehrwertigen Alkoholen.}
+				\begin{enumerate}
+	            \item \textbf{Ausführliches Protokoll!}
+	            	\begin{itemize}
+	            		\item Auftrag, begründete Hypothesen, Material, Beobachtung, Auswertung
+	                	\item Jede(r) schreibt ein eigenes Protokoll!
+	                	\item Mögliche Rechercheaufgaben können im Unterricht erfolgen, wenn noch Zeit ist!
+					\end{itemize}	            
+	            \item \textbf{Hinweise zur Planung/Durchführung:}
+	                \begin{itemize}
+	                	\item Um sinnvoll zu vergleichen, solltest du auch die Eigenschaften des einwertigen Alkohols untersuchen.
+	                	\item Achte darauf, dass die C-Kette identisch ist.
+					\end{itemize}	            
+	            \item  \textbf{Recherche für die Beobachtung: Nicht alle Eigenschaften können wir in der Schule experimentell untersuchen. Recherchiere daher folgende Eigenschaften für die einwertigen und mehrwertigen Alkohole (nimm 3 Vertreter z.B. C3-, C5-, C7-Kette):}
+	                \begin{itemize}
+	                	\item Schmelz- und Siedetemperaturen (in Diagramm)
+	                	\item Flammtemperaturen (in Diagramm)
+	                \end{itemize}
+	            \item \textbf{Hinweise für die Auswertung:}
+	            	\begin{itemize}
+		                \item Achte bei der Auswertung auf den Zusammenhang von Struktur-Kräfte-Eigenschaften!
+		                \item Werte auch die recherchierten Ergebnisse aus!
+		                \item Nutze Strukturformeln um deine Beobachtungen und Auswertungen zu erläutern!
+		                \item Fehleranalyse und Bezug zur Hypothese!
+		                \item Quellenangaben!
+	                \end{itemize}
+	            \item \textbf{Hinweise zum Layout:}
+	                \begin{itemize}
+		                \item Alle Experimente in ein Protokoll, nicht ein Protokoll für jedes Experiment!
+	                \end{itemize}
+	            \item \textbf{Abgabe:}
+	            	\begin{itemize}
+		            	\item Das Protokoll wird bewertet!
+	                	\item Deadline nach Absprache mit der Lehrkraft.
+					\end{itemize}
+				\end{enumerate}
+				
+\newpage
+		\section{Alkoholtest}
+		
+			\textit{Nachdem du herausgefunden hast, wie man Alkohol herstellt, passieren wieder mehr Unfälle, weil die Menschen zu viel trinken. Es gibt einen einfachen Test, den du noch an einigen verlassenen Tankstellen finden kannst, der zeigt, wie viel Alkohol eine Person getrunken hat. Der Test ist auch ein schönes Beispiel für angewandte Chemie! Man lernt dabei auch die Aldeyhden kennen!} \newline
+				
+			\begin{minipage}{0.7\textwidth}
+				\noindent \textbf{Am Ende dieses Kapitels solltest du ... :}
+				\begin{enumerate}
+					\item ... das Reaktionsschema für die Oxidation der Alkohole zu Aldehyden oder Ketonen aufstellen können.
+					\item ... den Begriff Oxidationszahl definieren können.
+					\item ... die Regeln zum Aufstellen der Oxidationszahlen nennen können.
+					\item ... die Begriffe Redoxreaktion, Oxidation und Reduktion mit Hilfe der Oxidationszahlen erläutern können. 
+					\item ... die Strukturformeln der funktionellen Gruppen der Aldeyde und Ketone aufzeichnen können.
+					\item ... die Verwendung ausgewählter Aldehyde und Ketone bzw. deren Vorkommen in der Natur zu erläutern.  
+				\end{enumerate}	
+				
+				\noindent \textbf{Vorgehensweise:}
+				\begin{enumerate}
+					\item Arbeite in Gruppen von 4-5 SuS.
+					\item Teilt euch die vier Texte auf!
+					\item Lest jeweils euren eigenen Text. 
+					\item Bearbeite die Arbeitsaufträge. 
+					\item Tauscht eure Ergebnisse aus und löst die Aufträge gemeinsam. Ihr müsste euch gegenseitig austauschen!
+				\end{enumerate}	
+			\end{minipage}
+			\hspace{0.1\textwidth}
+			\begin{minipage}{0.2\textwidth}
+				\begin{tcolorbox}
+					[enhanced,
+					width=0.9\textwidth,
+					colback=white,
+					colframe=black,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Zeit,  % search keyword::Zeit
+					attach boxed title to top center={xshift=-0.0mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=black,height=0.75cm},
+					colbacktitle=black,
+					drop lifted shadow]
+					\centering
+					\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_time}
+					
+					\begin{center}
+						\textbf{90min}
+					\end{center}
+				\end{tcolorbox}
+			\end{minipage}
+			
+			\begin{center}
+				\noindent\rule{18cm}{0.1pt}
+			\end{center}
+						
+\newpage	
+
+		\subsection{Die chemischen Hintergründe des Alkoholtests}
+
+			\noindent \textbf{Auftrag – Gruppe 1: Erkläre wie ein einfacher Alkoholtest funktioniert.}
+			\begin{enumerate}
+            	\item Stelle (mit deinen drei PartnerInnen) die \textbf{Reaktionsgleichung} für den Alkoholtest auf! (Tipp: Erst Wortgleichung, dann Reaktionsgleichung!!) 
+            	\item Konzentriert euch auf das \textbf{Chrom-Teilchen} in den nicht-organischen Substanzen!
+            	\item Verwende die geeigneten \textbf{LEWIS-Formeln für die organischen Verbindungen}!
+            	\item \textbf{Erläutere} den Begriff \textit{Redoxreaktion} und \textit{Oxidationszahlen} daran!
+            \end{enumerate}
+	        
+	        \begin{tcolorbox}[enhanced,
+				colback=white,
+				colframe=darkgray,
+				fonttitle=\sffamily\bfseries\large, 
+				title=Informationstext - Gruppe 1,  % search keyword::Informationstexte 
+				attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+				boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+				colbacktitle=darkgray,
+				drop lifted shadow]
+				\begin{wrapfigure}{L}{0.15\textwidth}  
+					\centering
+					\vspace{-14pt}  % to align image with first line of text
+					\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_content}
+				\end{wrapfigure}
+				
+				Um den Blutalkohol zu messen, gibt es mehrere Verfahren. Ein sehr einfaches Verfahren ist das \textit{Pusten}. Dabei nutzt die Polizei heute elektronische Meßgeräte. Man kann aber auch einfache Testgeräte an Tankstellen kaufen. Diese funktionieren über chemische Reaktionen.
+				Dabei wird gelbes Kaliumdichromat (\ch{K2Cr2O7}) durch den Alkohol in der Atemluft zu grünem Chrom(III)sulfat reduziert. Gleichzeitig wird Ethanol zu Acetaldehyd (und dann zu Essigsäure) oxidiert. Diese Reaktion läuft nur in der Gegenwart von Schwefelsäure ab, die in geringen Mengen in dem Testgerät enthalten ist. 				
+			\end{tcolorbox}
+			
+			\vspace{0.3cm}
+			\noindent \textbf{Auftrag – Gruppe 2: Erkläre wie ein einfacher Alkoholtest funktioniert.}
+			\begin{enumerate}
+            	\item Stelle (mit deinen drei PartnerInnen) die \textbf{Reaktionsgleichung} für den Alkoholtest auf! (Tipp: Erst Wortgleichung, dann Reaktionsgleichung!!) 
+            	\item Konzentriert euch auf das \textbf{Chrom-Teilchen} in den nicht-organischen Substanzen!
+            	\item Verwende die geeigneten \textbf{LEWIS-Formeln für die organischen Verbindungen}!
+            	\item \textbf{Erläutere} den Begriff \textit{Redoxreaktion} und \textit{Oxidationszahlen} daran!
+   			\end{enumerate}
+			
+			\begin{tcolorbox}[enhanced,
+				colback=white,
+				colframe=darkgray,
+				fonttitle=\sffamily\bfseries\large, 
+				title=Informationstext - Gruppe 2,  % search keyword::Informationstexte 
+				attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+				boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+				colbacktitle=darkgray,
+				drop lifted shadow]
+				\begin{wrapfigure}{L}{0.15\textwidth}  
+					\centering
+					\vspace{-14pt}  % to align image with first line of text
+					\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_content}
+				\end{wrapfigure}
+				
+				Eine Redoxreaktion ist eine Reaktion bei der Oxidation und Reduktion parallel ablaufen. Bisher waren beide Begriffe mit dem Übergang von Sauerstoffatomen verbunden. Bei der Oxidation verbindet sich ein Element mit Sauerstoff, bei der Reduktion wird einer Verbindung Sauerstoff entzogen. 
+				Schaut man sich die Sache genauer an, dann kann man Redoxreaktionen aber auch über Elektronenübergänge beschreiben. Bei der Reduktion werden Elektronen aufgenommen (die Oxidationszahl sinkt), bei der Oxidation werden Elektronen abgegeben (die Oxidationszahl steigt).			
+			\end{tcolorbox}
+			
+			\vspace{0.3cm}
+			\noindent \textbf{Auftrag – Gruppe 3: Erkläre wie ein einfacher Alkoholtest funktioniert.}
+			\begin{enumerate}
+            	\item Stelle (mit deinen drei PartnerInnen) die \textbf{Reaktionsgleichung} für den Alkoholtest auf! (Tipp: Erst Wortgleichung, dann Reaktionsgleichung!!) 
+            	\item Konzentriert euch auf das \textbf{Chrom-Teilchen} in den nicht-organischen Substanzen!
+            	\item Verwende die geeigneten \textbf{LEWIS-Formeln für die organischen Verbindungen}!
+            	\item \textbf{Erläutere} den Begriff \textit{Redoxreaktion} und \textit{Oxidationszahlen} daran!
+   			\end{enumerate}
+   			
+   			\begin{tcolorbox}[enhanced,
+				colback=white,
+				colframe=darkgray,
+				fonttitle=\sffamily\bfseries\large, 
+				title=Informationstext - Gruppe 3,  % search keyword::Informationstexte 
+				attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+				boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+				colbacktitle=darkgray,
+				drop lifted shadow]
+				\begin{wrapfigure}{L}{0.15\textwidth}  
+					\centering
+					\vspace{-14pt}  % to align image with first line of text
+					\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_content}
+				\end{wrapfigure}
+				
+				Oxidationszahlen sind hypothetische Ladungen, die man einem Atom in einer Verbindung gibt. Die Oxidationszahl kann negativ, Null oder positiv sein. Ein Element kann (in einer Verbindung) auch verschieden Oxidationszahlen haben. 
+				Dabei gibt es einige Regeln zu beachten:
+				\begin{itemize}
+					\item Elemente (also Stoffe, die keine Verbindungen sind) haben immer die Oxidationszahl 0.
+					\item Wasserstoff hat immer die Oxidationszahl +I. 
+					\item Sauerstoff hat  meistens die Oxidationszahl -II. 
+					\item Ionen haben die gleiche Oxidationszahl wie ihre Ladung. 
+				\end{itemize}
+				Bei organischen Verbindungen ergibt sich die Oxidationszahl des jeweiligen Kohlenstoffatoms aus den damit verbundenen Atomen bzw. funktionellen Gruppen. Jedes Kohlenstoffatom wird einzeln betrachtet.
+				\begin{center}
+				\includegraphics[width=0.5\textwidth]{images/oxidationnumbers_lewis}
+				\end{center}		
+			\end{tcolorbox}
+   			
+   			\vspace{0.3cm}
+			\noindent \textbf{Auftrag – Gruppe 4: Erkläre wie ein einfacher Alkoholtest funktioniert.}
+			\begin{enumerate}
+            	\item Stelle (mit deinen drei PartnerInnen) die \textbf{Reaktionsgleichung} für den Alkoholtest auf! (Tipp: Erst Wortgleichung, dann Reaktionsgleichung!!) 
+            	\item Konzentriert euch auf das \textbf{Chrom-Teilchen} in den nicht-organischen Substanzen!
+            	\item Verwende die geeigneten \textbf{LEWIS-Formeln für die organischen Verbindungen}!
+            	\item \textbf{Erläutere} den Begriff \textit{Redoxreaktion} und \textit{Oxidationszahlen} daran!
+   			\end{enumerate}   	
+		
+			\begin{tcolorbox}[enhanced,
+				colback=white,
+				colframe=darkgray,
+				fonttitle=\sffamily\bfseries\large, 
+				title=Informationstext - Gruppe 4,  % search keyword::Informationstexte 
+				attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+				boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+				colbacktitle=darkgray,
+				drop lifted shadow]
+				\begin{wrapfigure}{L}{0.15\textwidth}  
+					\centering
+					\vspace{-14pt}  % to align image with first line of text
+					\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_content}
+				\end{wrapfigure}
+				
+				Aldehyde sind „dehydrierte“ Alkohole. Sie haben die funktionelle Gruppe -CHO. Diese Gruppe wird auch als Aldehydgruppe bezeichnet. Kohlenstoff hat hier die Oxidationszahl +1. Aldehyde werden auch als Alkanale bezeichnet.
+				\begin{center}
+				\includegraphics[width=0.125\textwidth]{images/FunktionelleGruppen_Aldehyde.svg}
+				\end{center}
+				Die Benennung der Aldehyde leitet sich aus der Nomenklatur der Alkane ab. Die Aldehyde haben die Endung -al; also Methanal (auch bekannt als Formaldehy), Ethanal (auch bekannt als Acetaldehy), Propanal etc. \newline
+				Die C=O Bindung ist stark polar. Es kann also wie bei den Alkohlen zur Ausbildung von Dipol-Dipol-Kräften (bzw. Wasserstoffbrücken) kommen. Die Stoffe sind also bis zu einem bestimmten Punkt wasserlöslich.		
+			\end{tcolorbox}		
+	
+\newpage
+
+		\section{Aldehydnachweis}
+		
+		
+		\subsection{Die Silberspiegelprobe}
+	
 \end{document}
 
