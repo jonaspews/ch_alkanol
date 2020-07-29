@@ -16,6 +16,11 @@ Dieses Skript kann in der Mittelstufe genutzt werden, damit sich SuS das Thema A
 
 * **Jahrgang // year level:** 10
 
+### Kontext // Context:
+
+* Zombieland
+* Corona-Virus, Desinfektionsmittel // Covid19, Desinfectant
+
 ## Loslegen // Getting Started
 
 Folgende Möglichkeiten gibt es: ... // There are the following options: ...
