@@ -74,11 +74,37 @@
 % Some Info about this document
 % *****************************
 %
+
 % TODO: write Text how this doc can be used in school. also about RLP Brandenburg/Berlin
 
 % TODO: write more comments to explain/comment :-) the Tex-Code 
 
 \begin{document}
+
+% ***** start copy here *********************************************************
+% *******************************************************************************
+%                __ _           _   _                            _               
+%      _ __ ___ / _| | ___  ___| |_(_) ___  _ __        ___  ___| |_ _   _ _ __  
+%     | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____/ __|/ _ \ __| | | | '_ \ 
+%     | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____\__ \  __/ |_| |_| | |_) |
+%     |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|     |___/\___|\__|\__,_| .__/ 
+%                                                                         |_|    
+%
+%		only use this when you always use the same spiderweb-diagram
+% 		otherwise you have to copy this next to your actual diagramm and change the options
+%		at least this is my information january 2021
+		
+		\renewcommand{\D}{5} % number of dimensions (config option), in this cas it fits the reflection questions
+		\renewcommand{\U}{6} % number of scale units (config option)
+		\newdimen\R % maximal diagram radius (config option)
+		\R=3.5cm 
+		\newdimen\L % radius to put dimension labels (config option)
+		\L=4.5cm
+		\renewcommand{\A}{360/\D} % calculated angle between dimension axes 
+
+% *******************************************************************************
+% ***** end copy here ***********************************************************
+
 
 	\maketitle
 	
@@ -619,7 +645,7 @@
 						\includegraphics[width=0.9\textwidth]{symbols/symbol_tex_content}
 					\end{wrapfigure}
 					
-					Ein Katalysator ist ein Stoff, der die Aktivierungsenergie senkt, die von den Teilchen für den Start einer chemische Reaktion benötigt wird. Im Diagram ist die Energie als rote Linie dargestellt\footnote{Quelle: https://de.wikipedia.org/wiki/Katalysator [Stand: 17.7.2020]}. Da der Katalysator die Energiemenge, die benötigt wird, senkt, verringert er die Reaktionsgeschwindigkeit. Die Reaktion läuft viel schneller ab. Der Katalysator selbst wird während der Reaktion nicht verbraucht. Das bedeutet, dass man die gleiche Substanz mehrmals verwenden kann. \newline
+					Ein Katalysator ist ein Stoff, der die Aktivierungsenergie senkt, die von den Teilchen für den Start einer chemische Reaktion benötigt wird. Im Diagram ist die Energie als rote Linie dargestellt\footnote{Quelle: https://de.wikipedia.org/wiki/Katalysator [Stand: 17.7.2020]}. Da der Katalysator die Energiemenge, die benötigt wird, senkt, erhöht er die Reaktionsgeschwindigkeit. Die Reaktion läuft viel schneller ab. Der Katalysator selbst wird während der Reaktion nicht verbraucht. Das bedeutet, dass man die gleiche Substanz mehrmals verwenden kann. \newline
 					
 					\begin{center}
 						\includegraphics[width=0.5\textwidth]{images/energy_catalyst}
@@ -1271,11 +1297,137 @@
 				Die Benennung der Aldehyde leitet sich aus der Nomenklatur der Alkane ab. Die Aldehyde haben die Endung -al; also Methanal (auch bekannt als Formaldehy), Ethanal (auch bekannt als Acetaldehy), Propanal etc. \newline
 				Die C=O Bindung ist stark polar. Es kann also wie bei den Alkohlen zur Ausbildung von Dipol-Dipol-Kräften (bzw. Wasserstoffbrücken) kommen. Die Stoffe sind also bis zu einem bestimmten Punkt wasserlöslich.		
 			\end{tcolorbox}		
-	
+
+\vspace{5cm}	
+			\begin{center}
+				\begin{tcolorbox}[enhanced,
+					width=0.75\textwidth,
+					colback=white,
+					colframe=black,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Verbindungen herstellen,  % search keyword::Informationstexte 
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+					colbacktitle=black,
+					drop lifted shadow]
+					
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.7\textwidth]{symbols/symbol_tex_connect}
+					\end{wrapfigure}
+					
+					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
+					
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.} \newline
+						
+					\begin{center}
+						%\vspace{1.1cm}
+						\noindent\rule{12cm}{0.2pt}
+						\vspace{1.1cm}
+						\noindent\rule{12cm}{0.1pt}
+						\vspace{1.1cm}
+						\noindent\rule{12cm}{0.1pt}
+						\vspace{1.1cm}
+						\noindent\rule{12cm}{0.1pt}
+						\vspace{1.1cm}
+						\noindent\rule{12cm}{0.1pt}
+						\vspace{0.1cm}
+					\end{center}
+				\end{tcolorbox}
+			\end{center}
+
 \newpage
 
+	% ***** start copy here *********************************************************
+	% *******************************************************************************
+	%            __ _           _   _                        _                _   
+	%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+	% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+	% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+	% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+	%                                                                            
+	%
+	
+	\vspace{0.3cm}
+	\begin{center}
+		\begin{tcolorbox}[enhanced,
+			width=0.75\textwidth,
+			colback=white,
+			colframe=black,
+			fonttitle=\sffamily\bfseries\large, 
+			title=Kurzreflexion,  % search keyword::Informationstexte 
+			attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+			boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+			colbacktitle=black,
+			drop lifted shadow]
+			
+			% \begin{figure}[htbp]  % not good in ecolorbox
+			\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+			\begin{center}
+				\begin{tikzpicture}[scale=1]
+					\path (0:0cm) coordinate (O); % define coordinate for origin
+					
+					% draw the spiderweb
+					\foreach \X in {1,...,\D}{
+						\draw (\X*\A:0) -- (\X*\A:\R);
+					}
+					
+					\foreach \Y in {0,...,\U}{
+						\foreach \X in {1,...,\D}{
+					\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+					\fill (D\X-\Y) circle (1pt);
+						}
+						\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+							-- (\X*\A:\Y*\R/\U)
+						} -- cycle;
+					}
+					
+					% define labels for each dimension axis (names config option)
+					\path (1*\A:\L) node (L1) {\tiny Verständnis};
+					\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+					\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+					\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+					\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+				
+				\end{tikzpicture}
+				% \caption{Diagramm Slebstreflexion}
+				% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+				% \label{fig:spiderweb}
+				% \end{figure} 
+			\end{center}
+			\textbf{{\Large Was könntest du in der nächsten Stunde verbessern?}}
+			\begin{center}
+				%\vspace{1.1cm}
+				\noindent\rule{12cm}{0.2pt}
+				\vspace{1.1cm}
+				\noindent\rule{12cm}{0.1pt}
+				\vspace{1.1cm}
+				\noindent\rule{12cm}{0.1pt}
+				\vspace{1.1cm}
+				\noindent\rule{12cm}{0.1pt}
+				\vspace{1.1cm}
+				\noindent\rule{12cm}{0.1pt}
+				\vspace{1.1cm}
+				\noindent\rule{12cm}{0.1pt}
+				\vspace{1.1cm}
+				\noindent\rule{12cm}{0.1pt}
+				\vspace{1.1cm}
+				\noindent\rule{12cm}{0.1pt}
+			\end{center}
+		\end{tcolorbox}
+	\end{center}
+					
+	% *******************************************************************************
+	% ***** end copy here ***********************************************************
+	
+
+\newpage
+
+
+
 		\section{Aldehydnachweis}
-		
+%TODO: Zombieland -> Medizin Zuckernachweis Diabetes		
 			\textit{In Zombieland sind viele Sachen kaputt. Auch die Weihnachtskugeln für den Weihnachtsbaum. Wäre doch schade drum. Und einen ordentlichen Spiegel könnte man auch mal wieder gebrauchen. Zufälligerweise kann der Nachweis der Aldehyde ein wenig aushelfen.}
 			
 			\begin{minipage}{0.7\textwidth}
