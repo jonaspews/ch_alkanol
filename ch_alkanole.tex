@@ -173,7 +173,7 @@
 					
 					An diesen Stellen sollst du dein Wissen auffrischen! \newline 
 					Du solltest die entsprechenden Themen schon vorher im (Chemie-)Unterricht behandelt haben. Falls nicht, arbeite deine Wissenslücken bitte selbstständig auf. 
-					
+					\vspace{1.0cm}
 				\end{tcolorbox}
 				
 				
@@ -283,6 +283,73 @@
 							} 
 							\smartdiagram[constellation diagram]{Reflexion, {Habe ich die Zeit effektiv genutzt?}, {Habe ich alle Aufträge gelöst?}, {Habe ich alles verstanden?},  {Habe ich gut allein gearbeitet?}, {Habe ich gut in der Gruppe gearbeitet?}, {Was kann ich in der nächsten Stunde besser machen?}}
 						\end{center}
+						
+						\noindent Für eine schnelle Reflexion kann man dieses Diagramm benutzen. Im Portfolio sollte dann aber \textbf{zusätzlich} eine ausführliche Reflexion in Textform zu finden sein. Am Ende jedes Kapitels findet man eine Kurzreflexion. Aber im Portfolio kannst du auch öfter reflektieren. 
+						
+						% ***** start copy here *********************************************************
+						% *******************************************************************************
+						%            __ _           _   _                        _                _   
+						%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+						% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+						% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+						% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+						%                                                                            
+						%
+						
+						\vspace{0.3cm}
+						\begin{center}
+							\begin{tcolorbox}[enhanced,
+								width=0.75\textwidth,
+								colback=white,
+								colframe=darkgray,
+								fonttitle=\sffamily\bfseries\large, 
+								title=Kurzreflexion,  % search keyword::Informationstexte 
+								attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+								boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+								colbacktitle=darkgray,
+								drop lifted shadow]
+								
+								% \begin{figure}[htbp]  % not good in ecolorbox
+								\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+								\begin{center}
+								\begin{tikzpicture}[scale=1]
+									\path (0:0cm) coordinate (O); % define coordinate for origin
+									
+									% draw the spiderweb
+									\foreach \X in {1,...,\D}{
+										\draw (\X*\A:0) -- (\X*\A:\R);
+									}
+									
+									\foreach \Y in {0,...,\U}{
+										\foreach \X in {1,...,\D}{
+									\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+									\fill (D\X-\Y) circle (1pt);
+										}
+										\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+											-- (\X*\A:\Y*\R/\U)
+										} -- cycle;
+									}
+									
+									% define labels for each dimension axis (names config option)
+									\path (1*\A:\L) node (L1) {\tiny Verständnis};
+									\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+									\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+									\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+									\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+								
+								\end{tikzpicture}
+								% \caption{Diagramm Slebstreflexion}
+								% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+								% \label{fig:spiderweb}
+								% \end{figure} 
+								\end{center}
+								\textbf{{\Large Was kannst du in der nächsten Stunde verbessern?}}
+							
+							\end{tcolorbox}
+						\end{center}
+						% *******************************************************************************
+						% ***** end copy here ***********************************************************
+
 			
 		\newpage
 			
@@ -318,19 +385,19 @@
 							Vorhanden, sauber, sorgfältig bzw. kreativ gestaltet \\
 							\hline
 							% *** 5. Zeile **************************************************
-							\textbf{Äußere Form} &
+							\textbf{Form und Sprache} &
 							Ausführung ist in Teilen nicht akzeptabel &
 							Ausführung ist akzeptabel &
 							Ausführung ist  sauber und ordentlich &
 							Ausführung ist sehr sauber, leserlich und ordentlich \\
 							\hline
-							% *** 6. Zeile **************************************************
-							\textbf{Sprache} &
-							Sprachliche Defizite &
-							Zum Teil sprachliche Fehler &
-							Kaum sprachliche Fehler &
-							Angemessene fehlerfreie Sprache \\
-							\hline
+%							% *** 6. Zeile **************************************************
+%							\textbf{Sprache} &
+%							Sprachliche Defizite &
+%							Zum Teil sprachliche Fehler &
+%							Kaum sprachliche Fehler &
+%							Angemessene fehlerfreie Sprache \\
+%							\hline
 							% *** 7. Zeile **************************************************
 							\multicolumn{5}{c}{\textbf{Inhaltliche Kriterien (Gewichtung 2)}} \\
 							\hline
@@ -346,17 +413,18 @@
 							\hline
 							% *** 10. Zeile **************************************************
 							\textbf{Reflexion} &
-							Kaum Reflexionsfähigkeit erkennbar &
-							Reflexionsfähigkeit zum Teil erkennbar &
-							Gute Reflexionsfähigkeit erkennbar &
-							Sehr gute Reflexionsfähigkeit erkennbar \\
+							\textbf{Kaum Reflexionsfähigkeit erkennbar.} Die Kurzreflexionen wurden selten genutzt oder das Semester wurde abschließend reflektiert oder die Reflexion wurde während des Semsters manchmal vorgenommen. &
+							\textbf{Reflexionsfähigkeit zum Teil erkennbar.} Die Kurzreflexionen wurden selten genutzt. Das Semester wurde abschließend reflektiert oder die Reflexion wurde während des Semsters manchmal vorgenommen. &
+							\textbf{Gute Reflexionsfähigkeit erkennbar.} Die Reflexion wurde mehrfach während des Semsters vorgenommen. Die Kurzreflexionen wurden genutzt. Das Semester wurde abschließend ergänzend reflektiert.  &
+							\textbf{Sehr gute Reflexionsfähigkeit erkennbar.} Die Reflexion wurde mehrfach während des Semsters vorgenommen. Die Kurzreflexionen wurden sinnvoll genutzt. Das Semester wurde abschließend ausführlich ergänzend und glaubhaft reflektiert. \\
 							\hline
 						\end{tabular} \newline
 						
 						\vspace{1cm}
 						
 						\noindent Die \textit{Dokumentation} der Arbeit enthält z.B. die Lösungen zu den Arbeitsaufträgen, weitere Mitschriften, Quellen, Recherchen, gezeichnete oder ausgedruckte Bilder, Mind-Maps etc. \newline
-						Die durchgängige \textit{Reflexion} beinhaltet die Arbeit in der Klasse, in der Gruppe, Einzelarbeit, die Reflexion des Erkenntnisstands etc.
+						Die durchgängige \textit{Reflexion} beinhaltet die Arbeit in der Klasse, in der Gruppe, Einzelarbeit, die Reflexion des Erkenntnisstands etc. \newline
+						Die Lehrkraft kann in den Kategorien \textit{Dokumentation} und \textit{Reflexion} jeweils 1 bzw. 2BE von der Bewertung individuell abziehen.
 						
 						\end{landscape}
 			
@@ -409,6 +477,8 @@
 			\begin{center}
 				\noindent\rule{18cm}{0.1pt}
 			\end{center}
+
+
 			
 \newpage
 			\subsection{Die alkoholische Gärung}
@@ -654,6 +724,136 @@
 
 					In der Natur arbeiten Enzyme oft als Katalysatoren. Sie haben die gleichen drei Eigenschaften wie chemische Katalysatoren. Während der Gärung wird Zucker in den reaktiven Zentren der Hefe in Alkohol und Kohlendioxid (Anaerober Prozess) umgewandelt. Ohne die als Katalysator wirkende Hefe würde diese chemische Reaktion nicht stattfinden.
 				\end{tcolorbox}
+
+% ***** start copy here *********************************************************
+% *******************************************************************************
+\vspace{1cm}	
+			\begin{center}
+				\begin{tcolorbox}[enhanced,
+					width=0.75\textwidth,
+					colback=white,
+					colframe=blue,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Verbindungen herstellen,  % search keyword::Informationstexte 
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=blue,height=0.75cm},
+					colbacktitle=blue,
+					drop lifted shadow]
+					
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.7\textwidth]{symbols/symbol_tex_connect}
+					\end{wrapfigure}
+					
+					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
+					
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.}
+						
+%					\begin{center}
+%						%\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.2pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{0.1cm}
+%					\end{center}
+
+				\end{tcolorbox}
+			\end{center}
+			
+% ***** end copy here *********************************************************
+% *******************************************************************************	
+
+\newpage
+
+				% ***** start copy here *********************************************************
+				% *******************************************************************************
+				%            __ _           _   _                        _                _   
+				%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+				% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+				% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+				% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+				%                                                                            
+				%
+				
+				\vspace{0.3cm}
+				\begin{center}
+					\begin{tcolorbox}[enhanced,
+						width=0.75\textwidth,
+						colback=white,
+						colframe=darkgray,
+						fonttitle=\sffamily\bfseries\large, 
+						title=Kurzreflexion,  % search keyword::Informationstexte 
+						attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+						boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+						colbacktitle=darkgray,
+						drop lifted shadow]
+						
+						% \begin{figure}[htbp]  % not good in ecolorbox
+						\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+						\begin{center}
+							\begin{tikzpicture}[scale=1]
+								\path (0:0cm) coordinate (O); % define coordinate for origin
+								
+								% draw the spiderweb
+								\foreach \X in {1,...,\D}{
+									\draw (\X*\A:0) -- (\X*\A:\R);
+								}
+								
+								\foreach \Y in {0,...,\U}{
+									\foreach \X in {1,...,\D}{
+								\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+								\fill (D\X-\Y) circle (1pt);
+									}
+									\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+										-- (\X*\A:\Y*\R/\U)
+									} -- cycle;
+								}
+								
+								% define labels for each dimension axis (names config option)
+								\path (1*\A:\L) node (L1) {\tiny Verständnis};
+								\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+								\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+								\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+								\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+							
+							\end{tikzpicture}
+							% \caption{Diagramm Slebstreflexion}
+							% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+							% \label{fig:spiderweb}
+							% \end{figure} 
+						\end{center}
+						\textbf{{\Large Was kannst du in der nächsten Stunde verbessern?}}
+						\begin{center}
+							%\vspace{1.1cm}
+							\noindent\rule{12cm}{0.2pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+						\end{center}
+					\end{tcolorbox}
+				\end{center}
+								
+				% *******************************************************************************
+				% ***** end copy here ***********************************************************
+
 				
 \newpage
 
@@ -746,6 +946,137 @@
 				\item \textbf{Recherchiere} und \textbf{erkläre}, warum hochkonzentriertes Ethanol gegen Viren und Bakterien wirksam ist.
 			\end{enumerate}			
 
+
+% ***** start copy here *********************************************************
+% *******************************************************************************
+\vspace{1cm}	
+			\begin{center}
+				\begin{tcolorbox}[enhanced,
+					width=0.75\textwidth,
+					colback=white,
+					colframe=blue,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Verbindungen herstellen,  % search keyword::Informationstexte 
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=blue,height=0.75cm},
+					colbacktitle=blue,
+					drop lifted shadow]
+					
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.7\textwidth]{symbols/symbol_tex_connect}
+					\end{wrapfigure}
+					
+					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
+					
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.}
+						
+%					\begin{center}
+%						%\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.2pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{0.1cm}
+%					\end{center}
+
+				\end{tcolorbox}
+			\end{center}
+			
+% ***** end copy here *********************************************************
+% *******************************************************************************
+
+\newpage
+
+				% ***** start copy here *********************************************************
+				% *******************************************************************************
+				%            __ _           _   _                        _                _   
+				%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+				% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+				% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+				% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+				%                                                                            
+				%
+				
+				\vspace{0.3cm}
+				\begin{center}
+					\begin{tcolorbox}[enhanced,
+						width=0.75\textwidth,
+						colback=white,
+						colframe=darkgray,
+						fonttitle=\sffamily\bfseries\large, 
+						title=Kurzreflexion,  % search keyword::Informationstexte 
+						attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+						boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+						colbacktitle=darkgray,
+						drop lifted shadow]
+						
+						% \begin{figure}[htbp]  % not good in ecolorbox
+						\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+						\begin{center}
+							\begin{tikzpicture}[scale=1]
+								\path (0:0cm) coordinate (O); % define coordinate for origin
+								
+								% draw the spiderweb
+								\foreach \X in {1,...,\D}{
+									\draw (\X*\A:0) -- (\X*\A:\R);
+								}
+								
+								\foreach \Y in {0,...,\U}{
+									\foreach \X in {1,...,\D}{
+								\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+								\fill (D\X-\Y) circle (1pt);
+									}
+									\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+										-- (\X*\A:\Y*\R/\U)
+									} -- cycle;
+								}
+								
+								% define labels for each dimension axis (names config option)
+								\path (1*\A:\L) node (L1) {\tiny Verständnis};
+								\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+								\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+								\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+								\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+							
+							\end{tikzpicture}
+							% \caption{Diagramm Slebstreflexion}
+							% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+							% \label{fig:spiderweb}
+							% \end{figure} 
+						\end{center}
+						\textbf{{\Large Was kannst du in der nächsten Stunde verbessern?}}
+						\begin{center}
+							%\vspace{1.1cm}
+							\noindent\rule{12cm}{0.2pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+						\end{center}
+					\end{tcolorbox}
+				\end{center}
+								
+				% *******************************************************************************
+				% ***** end copy here ***********************************************************
+
+
 \newpage
 
 		\section{Die Eigenschaften von Ethanol}
@@ -814,6 +1145,7 @@
 				\end{wrapfigure}
 				
 				\textbf{Nenne} ein polares und ein unpolares Lösungsmittel. \textbf{Erläutere}, mit Hilfe des \textit{Struktur-Kräfte-Eigenschaften-Konzepts}, warum es sich jeweils um ein polares bzw. unpolares Lösungsmittel handelt. \textbf{Nenne} dabei auch die Kräfte, die zwischen den Molekülen wirken.
+				\vspace{0.3cm}
 			\end{tcolorbox}
 			
 			\begin{center}
@@ -850,6 +1182,138 @@
 							\item Ethanol wird als Frostschutzmittel genutzt. \textbf{Erläutere} warum!
 						\end{itemize}
 				\end{enumerate}
+
+% ***** start copy here *********************************************************
+% *******************************************************************************
+\vspace{3cm}	
+			\begin{center}
+				\begin{tcolorbox}[enhanced,
+					width=0.75\textwidth,
+					colback=white,
+					colframe=blue,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Verbindungen herstellen,  % search keyword::Informationstexte 
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=blue,height=0.75cm},
+					colbacktitle=blue,
+					drop lifted shadow]
+					
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.7\textwidth]{symbols/symbol_tex_connect}
+					\end{wrapfigure}
+					
+					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
+					
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.}
+						
+%					\begin{center}
+%						%\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.2pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{0.1cm}
+%					\end{center}
+
+				\end{tcolorbox}
+			\end{center}
+			
+% ***** end copy here *********************************************************
+% *******************************************************************************
+
+\newpage
+
+				% ***** start copy here *********************************************************
+				% *******************************************************************************
+				%            __ _           _   _                        _                _   
+				%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+				% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+				% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+				% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+				%                                                                            
+				%
+				
+				\vspace{0.3cm}
+				\begin{center}
+					\begin{tcolorbox}[enhanced,
+						width=0.75\textwidth,
+						colback=white,
+						colframe=darkgray,
+						fonttitle=\sffamily\bfseries\large, 
+						title=Kurzreflexion,  % search keyword::Informationstexte 
+						attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+						boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+						colbacktitle=darkgray,
+						drop lifted shadow]
+						
+						% \begin{figure}[htbp]  % not good in ecolorbox
+						\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+						\begin{center}
+							\begin{tikzpicture}[scale=1]
+								\path (0:0cm) coordinate (O); % define coordinate for origin
+								
+								% draw the spiderweb
+								\foreach \X in {1,...,\D}{
+									\draw (\X*\A:0) -- (\X*\A:\R);
+								}
+								
+								\foreach \Y in {0,...,\U}{
+									\foreach \X in {1,...,\D}{
+								\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+								\fill (D\X-\Y) circle (1pt);
+									}
+									\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+										-- (\X*\A:\Y*\R/\U)
+									} -- cycle;
+								}
+								
+								% define labels for each dimension axis (names config option)
+								\path (1*\A:\L) node (L1) {\tiny Verständnis};
+								\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+								\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+								\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+								\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+							
+							\end{tikzpicture}
+							% \caption{Diagramm Slebstreflexion}
+							% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+							% \label{fig:spiderweb}
+							% \end{figure} 
+						\end{center}
+						\textbf{{\Large Was kannst du in der nächsten Stunde verbessern?}}
+						\begin{center}
+							%\vspace{1.1cm}
+							\noindent\rule{12cm}{0.2pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+						\end{center}
+					\end{tcolorbox}
+				\end{center}
+								
+				% *******************************************************************************
+				% ***** end copy here ***********************************************************
+
+
+
 \newpage
 
 		\section{Die Nomenklatur der Alkohole}
@@ -909,7 +1373,7 @@
 				\end{wrapfigure}
 				
 				\textbf{Erläutere} die wichtigsten Regeln zur Benennung der Alkane. 
-				\vspace{1.1cm}
+				\vspace{1.6cm}
 			\end{tcolorbox}
 			
 			\begin{center}
@@ -1012,6 +1476,136 @@
 					\vspace{0.3cm}  % to fill empty space in tcolorbox
 				\end{tcolorbox}
 
+% ***** start copy here *********************************************************
+% *******************************************************************************
+\vspace{9cm}	
+			\begin{center}
+				\begin{tcolorbox}[enhanced,
+					width=0.75\textwidth,
+					colback=white,
+					colframe=blue,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Verbindungen herstellen,  % search keyword::Informationstexte 
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=blue,height=0.75cm},
+					colbacktitle=blue,
+					drop lifted shadow]
+					
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.7\textwidth]{symbols/symbol_tex_connect}
+					\end{wrapfigure}
+					
+					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
+					
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.}
+						
+%					\begin{center}
+%						%\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.2pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{0.1cm}
+%					\end{center}
+
+				\end{tcolorbox}
+			\end{center}
+			
+% ***** end copy here *********************************************************
+% *******************************************************************************
+
+\newpage
+
+				% ***** start copy here *********************************************************
+				% *******************************************************************************
+				%            __ _           _   _                        _                _   
+				%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+				% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+				% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+				% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+				%                                                                            
+				%
+				
+				\vspace{0.3cm}
+				\begin{center}
+					\begin{tcolorbox}[enhanced,
+						width=0.75\textwidth,
+						colback=white,
+						colframe=darkgray,
+						fonttitle=\sffamily\bfseries\large, 
+						title=Kurzreflexion,  % search keyword::Informationstexte 
+						attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+						boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+						colbacktitle=darkgray,
+						drop lifted shadow]
+						
+						% \begin{figure}[htbp]  % not good in ecolorbox
+						\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+						\begin{center}
+							\begin{tikzpicture}[scale=1]
+								\path (0:0cm) coordinate (O); % define coordinate for origin
+								
+								% draw the spiderweb
+								\foreach \X in {1,...,\D}{
+									\draw (\X*\A:0) -- (\X*\A:\R);
+								}
+								
+								\foreach \Y in {0,...,\U}{
+									\foreach \X in {1,...,\D}{
+								\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+								\fill (D\X-\Y) circle (1pt);
+									}
+									\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+										-- (\X*\A:\Y*\R/\U)
+									} -- cycle;
+								}
+								
+								% define labels for each dimension axis (names config option)
+								\path (1*\A:\L) node (L1) {\tiny Verständnis};
+								\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+								\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+								\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+								\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+							
+							\end{tikzpicture}
+							% \caption{Diagramm Slebstreflexion}
+							% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+							% \label{fig:spiderweb}
+							% \end{figure} 
+						\end{center}
+						\textbf{{\Large Was kannst du in der nächsten Stunde verbessern?}}
+						\begin{center}
+							%\vspace{1.1cm}
+							\noindent\rule{12cm}{0.2pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+						\end{center}
+					\end{tcolorbox}
+				\end{center}
+								
+				% *******************************************************************************
+				% ***** end copy here ***********************************************************
+
+
 \newpage
 	\part{Additum}
 		\section{Mehrwertige Alkohole}
@@ -1071,7 +1665,7 @@
 				\end{wrapfigure}
 				
 				Schau dir noch einmal die Protokoll zu den anderen Experimenten an, mit denen du Stoffeigenschaften untersucht hast. Wie wurden sie durchgeführt und was konntest du daraus ableiten? 
-				\vspace{0.3cm}
+				\vspace{1.1cm}
 			\end{tcolorbox}
 			
 			\begin{center}
@@ -1117,6 +1711,136 @@
 	                	\item Deadline nach Absprache mit der Lehrkraft.
 					\end{itemize}
 				\end{enumerate}
+
+% ***** start copy here *********************************************************
+% *******************************************************************************
+\vspace{4cm}	
+			\begin{center}
+				\begin{tcolorbox}[enhanced,
+					width=0.75\textwidth,
+					colback=white,
+					colframe=blue,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Verbindungen herstellen,  % search keyword::Informationstexte 
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=blue,height=0.75cm},
+					colbacktitle=blue,
+					drop lifted shadow]
+					
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.7\textwidth]{symbols/symbol_tex_connect}
+					\end{wrapfigure}
+					
+					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
+					
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.}
+						
+%					\begin{center}
+%						%\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.2pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{0.1cm}
+%					\end{center}
+
+				\end{tcolorbox}
+			\end{center}
+			
+% ***** end copy here *********************************************************
+% *******************************************************************************
+
+\newpage
+
+				% ***** start copy here *********************************************************
+				% *******************************************************************************
+				%            __ _           _   _                        _                _   
+				%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+				% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+				% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+				% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+				%                                                                            
+				%
+				
+				\vspace{0.3cm}
+				\begin{center}
+					\begin{tcolorbox}[enhanced,
+						width=0.75\textwidth,
+						colback=white,
+						colframe=darkgray,
+						fonttitle=\sffamily\bfseries\large, 
+						title=Kurzreflexion,  % search keyword::Informationstexte 
+						attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+						boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+						colbacktitle=darkgray,
+						drop lifted shadow]
+						
+						% \begin{figure}[htbp]  % not good in ecolorbox
+						\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+						\begin{center}
+							\begin{tikzpicture}[scale=1]
+								\path (0:0cm) coordinate (O); % define coordinate for origin
+								
+								% draw the spiderweb
+								\foreach \X in {1,...,\D}{
+									\draw (\X*\A:0) -- (\X*\A:\R);
+								}
+								
+								\foreach \Y in {0,...,\U}{
+									\foreach \X in {1,...,\D}{
+								\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+								\fill (D\X-\Y) circle (1pt);
+									}
+									\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+										-- (\X*\A:\Y*\R/\U)
+									} -- cycle;
+								}
+								
+								% define labels for each dimension axis (names config option)
+								\path (1*\A:\L) node (L1) {\tiny Verständnis};
+								\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+								\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+								\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+								\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+							
+							\end{tikzpicture}
+							% \caption{Diagramm Slebstreflexion}
+							% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+							% \label{fig:spiderweb}
+							% \end{figure} 
+						\end{center}
+						\textbf{{\Large Was kannst du in der nächsten Stunde verbessern?}}
+						\begin{center}
+							%\vspace{1.1cm}
+							\noindent\rule{12cm}{0.2pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+						\end{center}
+					\end{tcolorbox}
+				\end{center}
+								
+				% *******************************************************************************
+				% ***** end copy here ***********************************************************
+
 				
 \newpage
 		\section{Alkoholtest}
@@ -1298,17 +2022,19 @@
 				Die C=O Bindung ist stark polar. Es kann also wie bei den Alkohlen zur Ausbildung von Dipol-Dipol-Kräften (bzw. Wasserstoffbrücken) kommen. Die Stoffe sind also bis zu einem bestimmten Punkt wasserlöslich.		
 			\end{tcolorbox}		
 
-\vspace{5cm}	
+% ***** start copy here *********************************************************
+% *******************************************************************************
+\vspace{12cm}	
 			\begin{center}
 				\begin{tcolorbox}[enhanced,
 					width=0.75\textwidth,
 					colback=white,
-					colframe=black,
+					colframe=blue,
 					fonttitle=\sffamily\bfseries\large, 
 					title=Verbindungen herstellen,  % search keyword::Informationstexte 
 					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
-					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
-					colbacktitle=black,
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=blue,height=0.75cm},
+					colbacktitle=blue,
 					drop lifted shadow]
 					
 					\begin{wrapfigure}{L}{0.15\textwidth}  
@@ -1319,23 +2045,27 @@
 					
 					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
 					
-					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.} \newline
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.}
 						
-					\begin{center}
-						%\vspace{1.1cm}
-						\noindent\rule{12cm}{0.2pt}
-						\vspace{1.1cm}
-						\noindent\rule{12cm}{0.1pt}
-						\vspace{1.1cm}
-						\noindent\rule{12cm}{0.1pt}
-						\vspace{1.1cm}
-						\noindent\rule{12cm}{0.1pt}
-						\vspace{1.1cm}
-						\noindent\rule{12cm}{0.1pt}
-						\vspace{0.1cm}
-					\end{center}
+%					\begin{center}
+%						%\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.2pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{0.1cm}
+%					\end{center}
+
 				\end{tcolorbox}
 			\end{center}
+			
+% ***** end copy here *********************************************************
+% *******************************************************************************			
 
 \newpage
 
@@ -1421,6 +2151,9 @@
 	% *******************************************************************************
 	% ***** end copy here ***********************************************************
 	
+
+
+
 
 \newpage
 
@@ -1529,6 +2262,135 @@
 					\url{https://kinder.wdr.de/tv/die-sendung-mit-der-maus/av/video-sachgeschichte--christbaumkugel-100.html}
 				\vspace{0.5cm}  % to fill empty space in tcolorbox
 			\end{tcolorbox}
+			
+% ***** start copy here *********************************************************
+% *******************************************************************************
+\vspace{1cm}	
+			\begin{center}
+				\begin{tcolorbox}[enhanced,
+					width=0.75\textwidth,
+					colback=white,
+					colframe=blue,
+					fonttitle=\sffamily\bfseries\large, 
+					title=Verbindungen herstellen,  % search keyword::Informationstexte 
+					attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+					boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=blue,height=0.75cm},
+					colbacktitle=blue,
+					drop lifted shadow]
+					
+					\begin{wrapfigure}{L}{0.15\textwidth}  
+						\centering
+						\vspace{-14pt}  % to align image with first line of text
+						\includegraphics[width=0.7\textwidth]{symbols/symbol_tex_connect}
+					\end{wrapfigure}
+					
+					\textit{Alle Kapitel sind miteinander verbunden. Wissen aus dem vorherigen Kapitel kann dir im nächsten Kapitel helften. Dazu musst du die Verbindungn zwischen den Kapiteln herstellen.} \newline
+					
+					\textbf{Auftrag: Nenne stichpunktartig drei wichtige Sachverhalte aus dem Kapitel, die du in Zukunft brauchen könntest.}
+						
+%					\begin{center}
+%						%\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.2pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{1.1cm}
+%						\noindent\rule{12cm}{0.1pt}
+%						\vspace{0.1cm}
+%					\end{center}
+
+				\end{tcolorbox}
+			\end{center}
+			
+% ***** end copy here *********************************************************
+% *******************************************************************************
+
+\newpage
+
+				% ***** start copy here *********************************************************
+				% *******************************************************************************
+				%            __ _           _   _                        _                _   
+				%  _ __ ___ / _| | ___  ___| |_(_) ___  _ __         ___| |__   __ _ _ __| |_ 
+				% | '__/ _ \ |_| |/ _ \/ __| __| |/ _ \| '_ \ _____ / __| '_ \ / _` | '__| __|
+				% | | |  __/  _| |  __/ (__| |_| | (_) | | | |_____| (__| | | | (_| | |  | |_ 
+				% |_|  \___|_| |_|\___|\___|\__|_|\___/|_| |_|      \___|_| |_|\__,_|_|   \__|
+				%                                                                            
+				%
+				
+				\vspace{0.3cm}
+				\begin{center}
+					\begin{tcolorbox}[enhanced,
+						width=0.75\textwidth,
+						colback=white,
+						colframe=darkgray,
+						fonttitle=\sffamily\bfseries\large, 
+						title=Kurzreflexion,  % search keyword::Informationstexte 
+						attach boxed title to top left={xshift=3.2mm,yshift=-0.50mm},
+						boxed title style={skin=enhancedfirst jigsaw,size=small,arc=1mm,bottom=-1mm,colframe=darkgray,height=0.75cm},
+						colbacktitle=darkgray,
+						drop lifted shadow]
+						
+						% \begin{figure}[htbp]  % not good in ecolorbox
+						\textbf{Auftrag: Bewerte deine Arbeit in der letzten Einheit selbst.} \newline
+						\begin{center}
+							\begin{tikzpicture}[scale=1]
+								\path (0:0cm) coordinate (O); % define coordinate for origin
+								
+								% draw the spiderweb
+								\foreach \X in {1,...,\D}{
+									\draw (\X*\A:0) -- (\X*\A:\R);
+								}
+								
+								\foreach \Y in {0,...,\U}{
+									\foreach \X in {1,...,\D}{
+								\path (\X*\A:\Y*\R/\U) coordinate (D\X-\Y);
+								\fill (D\X-\Y) circle (1pt);
+									}
+									\draw [opacity=0.3] (0:\Y*\R/\U) \foreach \X in {1,...,\D}{
+										-- (\X*\A:\Y*\R/\U)
+									} -- cycle;
+								}
+								
+								% define labels for each dimension axis (names config option)
+								\path (1*\A:\L) node (L1) {\tiny Verständnis};
+								\path (2*\A:\L) node (L2) {\tiny alle Aufgaben gelöst};
+								\path (3*\A:\L) node (L3) {\tiny Zeit effektiv genutz};
+								\path (4*\A:\L) node (L4) {\tiny Einzelarbeit};
+								\path (5*\A:\L) node (L5) {\tiny Gruppenarbeit};
+							
+							\end{tikzpicture}
+							% \caption{Diagramm Slebstreflexion}
+							% \caption{Spiderweb Diagram (\D~Dimensions, \U-Notch Scale, 3 Samples)}
+							% \label{fig:spiderweb}
+							% \end{figure} 
+						\end{center}
+						\textbf{{\Large Was kannst du in der nächsten Stunde verbessern?}}
+						\begin{center}
+							%\vspace{1.1cm}
+							\noindent\rule{12cm}{0.2pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+							\vspace{1.1cm}
+							\noindent\rule{12cm}{0.1pt}
+						\end{center}
+					\end{tcolorbox}
+				\end{center}
+								
+				% *******************************************************************************
+				% ***** end copy here ***********************************************************			
 			
 \end{document}
 
